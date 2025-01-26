@@ -1,0 +1,62 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [2025.1.0] - 2025-01-21
+
+### Changed
+- `btkGetForcePlatformWrenches`: parameter input `inglobalframe` added to fit with the original API.
+
+### Deprecated
+- `btkCloseAcquisition` added to fit with the original API, but does nothing internaly thanks to a better memory management.
+- `btkDeleteAcquisition` added to fit with the original API, which was an alias of btkCloseAcquisition.
+
+### Fixed
+- `btkReadAcquisition`: files with no forceplate will not throw exceptions
+- `btkReadAcquisition`: local file path can be read instead of forcing to have global paths.
+
+## [2025.0.0] - 2025-01-16
+
+### Added
+- Improve C3D reader to get Rotations data contained in metadata.
+
+### Changed
+- The residual values of points are not part of the current API, any function that had an association with residual values was either removed or adapted in consequences.
+- Improve behaviour of points when reading invalid data (e.g. markers' occlusion). Instead of reading 0 now reads NaN and do not have to rely on the residuals.
+- All functions related to Vicon analysis were removed to determine. This part was removed from the C3D specifications. It is proposed to discuss with the community to determine what to do.
+
+### Deprecated
+- `btkSetMetaDataDescription` exists but does nothing and returns the existing metadata.
+
+### Remvoved
+- All MetadData functions with a variadic overload (any arguments of the form `...`) are removed. They were not necessary as the C3D file format has only two level of depth.
+
+### Fixed
+- Fix UTF-8 filename issues.
+
+#### Functions that are not supported in the current version 
+- `btkAppendAnalysisParameter`: removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
+- `btkAppendForcePlatformType2`: .
+- `btkClearAnalysis`: removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
+- `btkCloseAcquisition`: Not implemented as we improved the memory management.
+- `btkCloneAcquisition`: There is no plan to implement them as we did not receive any feedback on their current usage.
+- `btkCropAcquisition`: There is no plan to implement them as we did not receive any feedback on their current usage.
+- `btkDeleteAcquisition`: Not implemented as we improved the memory management.
+- `btkEmulateC3Dserver`: Not available because it was a migration function for c3dserver’s users. Because c3dserver is not supported anymore. This function was not planned to be implemented.
+- `btkGetEventsValues`: Not implemented because they were too close to the internal C3D structure.
+- `btkGetMarkersResiduals`: Not implemented because the behaviour on points'values is different.
+- `btkGetPointsResiduals`: Not implemented because the behaviour on points'values is different.
+- `btkGetScalars`: Not implemented because we never received file with this point's type.
+- `btkGetScalarsValues`: Not implemented because we never received file with this point's type.
+- `btkMergeAcquisitions`: Not yet implemented but planned.
+- `btkSetEventLabel`: Not implemented because they were too close to the internal C3D structure.
+- `btkSetMetaDataLabel`: Not yet implemented but planned.
+- `btkSetEventSubject`: Not implemented because they were too close to the internal C3D structure.
+- `btkSetMarkersResiduals`: Not implemented because the behaviour on points'values is different.
+- `btkSetMetaDataUnlock`: Not implemented because the new internal structure does not have an internal lock/unlock feature.
+- `btkSetPointResiduals`: Not implemented because the behaviour on points'values is different.
+- `btkSetPointsResiduals`: Not implemented because the behaviour on points'values is different.
+- `btkSetScalarsValues`: Not implemented because we never received file with this point's type.
+- `btkTransformTDFToViconC3DFile`: Not implemented as we did not receive any feedback on its usage..

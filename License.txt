@@ -1,0 +1,39 @@
+Last Updated:
+Copyright (c) 2025, Moveck Solution. All rights reserved.
+
+1. Grant of Licence
+This software, Moveck Bridge (the "Software"), is provided as freeware. You may download, install, and use the Software for personal or internal business purposes, subject to the terms of this agreement.
+
+2 INTELLECTUAL PROPERTY
+2.1 Ownership of Intellectual Property
+Moveck retains all right, title, and interest in and to the Software, including but not limited to all associated documentation, source code, object code, modifications, enhancements, updates, derivative works, trademarks, trade names, and other Intellectual Property Rights. This Agreement does not grant you any rights or ownership in the Software beyond the limited rights expressly stated herein.
+2.2 Licence Grant
+Subject to your compliance with the terms of this Agreement, Moveck grants you a non-exclusive, non-transferable, royalty-free licence to use the Software solely for personal, educational, or internal business purposes. Redistribution, resale, or sublicensing of the Software is strictly prohibited unless expressly authorized by Moveck in writing.
+2.3 Restrictions
+You may not:
+Reverse engineer, decompile, or disassemble the Software, except as explicitly permitted by applicable law.
+Modify, adapt, or create derivative works based on the Software.
+Remove or alter any copyright, trademark, or proprietary notices included in the Software.
+Use the Software in a manner that infringes on Moveck's Intellectual Property Rights.
+2.4 Feedback
+If you provide suggestions, ideas, or feedback regarding the Software ("Feedback"), Moveck shall be free to use, disclose, reproduce, license, or otherwise distribute and exploit the Feedback for any purpose, without any obligation or compensation to you. Any Intellectual Property Rights associated with such Feedback will belong solely to Moveck.
+2.5 Trademarks and Branding
+Nothing in this Agreement grants you the right to use Moveck's trademarks, trade names, or branding without prior written consent. All such rights are reserved by Moveck.
+
+3 Limitation of Liability and Disclaimer of Warranty
+3.1 Freeware Liability Disclaimer
+MOVECK PROVIDES THE SOFTWARE "AS IS" AND DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. MOVECK SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE SOFTWARE, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, DATA, OR OTHER INTANGIBLES.
+3.2 Maximum Liability
+In no event shall Moveck's liability exceed the amount you paid for the Software, which, in the case of freeware, is zero.
+
+4 Termination
+4.1 Term
+This Agreement will remain in effect for as long as you continue to use the Software. The Agreement may be terminated by Moveck if you violate any of its terms.
+4.2 Effect of Termination
+Upon termination:
+You must cease all use of the Software.
+Any provisions meant to survive termination, including Sections [Intellectual Property], [Limitation of Liability], and [Governing Law], shall remain in effect.
+
+5 Governing Law
+5.1 Jurisdiction
+This Agreement shall be governed by the laws of the Province of Quebec, Canada, without regard to its conflicts of law rules. All disputes arising out of or relating to this Agreement shall be resolved exclusively by the courts located in the judicial district of Quebec, province of Quebec, Canada. If the Software is distributed in other jurisdictions, the laws of that jurisdiction may apply, but this will not supersede the protections and disclaimers outlined in this Agreement.
