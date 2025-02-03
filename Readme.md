@@ -13,6 +13,9 @@ Bridge is available for the following programming language, operating systems, a
 > [!IMPORTANT]  
 > For people who are using the original Matlab bindings of the Biomechanical ToolKit project, you should read the [Current Limitations](#current-limitations) and [Breaking Changes](#breaking-changes) sections to see if this can impact you Matlab scripts.
 
+## Releases
+
+The latest releases are available on the GitHub website. You can find them on the [Releases](https://github.com/moveck-community/moveck_bridge_btk/releases) page.
 
 ## Installation
 
