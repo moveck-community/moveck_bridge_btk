@@ -1,4 +1,4 @@
-# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.1.0-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.1.1-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Bridge proposes to reproduce the API of the Biomechanical-ToolKit (BTK)  project as defined in its Matlab bindings and expose it to other programming languages like Python 3.
 
