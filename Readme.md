@@ -1,4 +1,4 @@
-# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.1.1-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.1.2-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Bridge proposes to reproduce the API of the Biomechanical-ToolKit (BTK)  project as defined in its Matlab bindings and expose it to other programming languages like Python 3.
 
@@ -21,23 +21,7 @@ The latest releases are available on the GitHub website. You can find them on th
 
 ### Python 3.9+
 
-#### Using wheel files
-
-> [!IMPORTANT]  
-> The following way to download the wheel file adapted to your Python version may be a temporary way. We are working on the inclusion of those wheel files on the website of the Python Package Index (PyPI) .
-
-All releases are proposed as wheel files. You only need to download the wheel file corresponding to your Python version and use the `pip` command. All those wheels are available on the Releases page.
-
-```bash
-pip install <path_to_the_downloaded_wheel_file>
-```
-
-This will also download the required dependency Numpy 2.x.
-
 #### Using PyPI
-
-> [!IMPORTANT]  
-> This installation method is not yet ready. We are finalizing
 
 You can use the Python Package Index (PyPI) to simplify the installation. The python version, the operating system, and the processing architecture are detected and the corresponding binary distribution will be downloaded.
 
@@ -45,12 +29,23 @@ You can use the Python Package Index (PyPI) to simplify the installation. The py
 pip install moveck_bridge_btk
 ```
 
+This will also download the required dependency Numpy 2.x.
+
+#### Using wheel files
+
+All releases are proposed as wheel files. You only need to download the wheel file corresponding to your Python version and use the `pip` command. All those wheels are available on the [Releases](https://github.com/moveck-community/moveck_bridge_btk/releases) page.
+
+```bash
+pip install <path_to_the_downloaded_wheel_file>
+```
+
+This will also download the required dependency Numpy 2.x.
+
 ### Matlab
 
-You only need to download the ZIP file corresponding to your operating system and decompress it on the folder of your choice.
+You only need to download the ZIP file corresponding to your operating system and decompress it on the folder of your choice. The ZIP files are available on the [Releases](https://github.com/moveck-community/moveck_bridge_btk/releases) page.
 
 Then, you can open Matlab, and add the path of this package to your workspace (see the official documentation for more details: [Change Folders on Search Path](https://www.mathworks.com/help/matlab/matlab_env/add-remove-or-reorder-folders-on-the-search-path.html)).
-
 
 ## Usage/Examples
 
