@@ -25,6 +25,8 @@ The latest releases are available on the GitHub website. You can find them on th
 
 You can use the Python Package Index (PyPI) to simplify the installation. The python version, the operating system, and the processing architecture are detected and the corresponding binary distribution will be downloaded.
 
+You can check the latest version available on PyPI using the package page [moveck-bridge-btk](https://pypi.org/project/moveck-bridge-btk/).
+
 ```bash
 pip install moveck_bridge_btk
 ```
