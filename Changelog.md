@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.1.3] - 2025-02-15
+
+### Fixed
+- Fix forceplate validation pipeline that were too strict and expected only forceplate channels in analogs.
+- Fix event's label and event's dimensions not retrieved in the same way than in the original project.
+
 ## [2025.1.2] - 2025-02-08
 
 ### Fixed
@@ -38,20 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The residual values of points are not part of the current API, any function that had an association with residual values was either removed or adapted in consequences.
 - Improve behaviour of points when reading invalid data (e.g. markers' occlusion). Instead of reading 0 now reads NaN and do not have to rely on the residuals.
 - All functions related to Vicon analysis were removed to determine. This part was removed from the C3D specifications. It is proposed to discuss with the community to determine what to do.
-
-### Deprecated
-- `btkSetMetaDataDescription` exists but does nothing and returns the existing metadata.
-
-### Remvoved
-- All MetadData functions with a variadic overload (any arguments of the form `...`) are removed. They were not necessary as the C3D file format has only two level of depth.
-
-### Fixed
-- Fix UTF-8 filename issues.
-
-#### Functions that are not supported in the current version 
-- `btkAppendAnalysisParameter`: removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
-- `btkAppendForcePlatformType2`: .
-- `btkClearAnalysis`: removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
+- `btkAppendAnalysisParameter`: Removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
+- `btkAppendForcePlatformType2`: Not implemenented as we need to review its design with the community.
+- `btkClearAnalysis`: Removed as the managed metadata was was Vicon specific and not anymore in the official C3D specification.
 - `btkCloseAcquisition`: Not implemented as we improved the memory management.
 - `btkCloneAcquisition`: There is no plan to implement them as we did not receive any feedback on their current usage.
 - `btkCropAcquisition`: There is no plan to implement them as we did not receive any feedback on their current usage.
@@ -71,4 +66,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `btkSetPointResiduals`: Not implemented because the behaviour on points'values is different.
 - `btkSetPointsResiduals`: Not implemented because the behaviour on points'values is different.
 - `btkSetScalarsValues`: Not implemented because we never received file with this point's type.
-- `btkTransformTDFToViconC3DFile`: Not implemented as we did not receive any feedback on its usage..
+- `btkTransformTDFToViconC3DFile`: Not implemented as we did not receive any feedback on its usage.
+
+### Deprecated
+- `btkSetMetaDataDescription` exists but does nothing and returns the existing metadata.
+
+### Remvoved
+- All MetadData functions with a variadic overload (any arguments of the form `...`) are removed. They were not necessary as the C3D file format has only two level of depth.
+
+### Fixed
+- Fix UTF-8 filename issues.
