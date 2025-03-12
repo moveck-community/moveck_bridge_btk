@@ -1,4 +1,4 @@
-# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.1.3-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+# Moveck Bridge ![semver](https://img.shields.io/badge/semver-2025.2.0-blue) ![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 Bridge proposes to reproduce the API of the Biomechanical-ToolKit (BTK)  project as defined in its Matlab bindings and expose it to other programming languages like Python 3.
 
@@ -89,7 +89,7 @@ By design, some of the original functions are not yet supported. We would like t
 - The function `btkRemoveEvent` is not yet implemented.
 - `btkCloneAcquisition` and `btkCropAcquisition` are not supported. There is no plan to implement them as we did not receive any feedback on their current usage.
 - `btkEmulateC3Dserver` is not available because it was a migration function for c3dserver’s users. Because c3dserver is not supported anymore. This function was not planned to be implemented.
-- `btkSetMetaDataLabel` is not yet implemented but is planned for version 2025.2.0.
+- `btkSetMetaDataLabel` is not yet implemented but is planned for a future version.
 - `btkTransformTDFToViconC3DFile` is not implemented as we did not receive any feedback on its usage.
 
 ### Breaking Changes
@@ -107,8 +107,6 @@ During the implementation of the functions and the porting to Python 3, several 
 > This is a work-in-progress online documentation. We are working on another website which will contain more examples and adapted to work on mobile devices and tablets.
 
 You can get access to the first draft of our [online documentation](https://moveckprodoc.z27.web.core.windows.net/bridge/matlab/nightly/api/main.html) for the Bridge API.
-
-
 
 ## Contributing
 
