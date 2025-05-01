@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.3.1] - 2025-05-01
+
+## Fixed
+- Fix a bug where forceplates of type 3 and 5 would not be correctly exported
+- Fix a bug where forceplates would not be exported if no getters/setters were called on forceplates beforehands.
+
+## [2025.3.0] - 2025-04-27
+
+### Changed
+- Internal forceplate process pipeline improved.
+- Internal export system improved. 
+
+## Fixed
+- `btkWriteAcquisition` fails to export certain fields of metadata.
+- `btkWriteAcquisition` fails to export rotation data.
+- Fix a bug where forceplates of type 3 doest not use the good origin and results would not have the correct center of pressure and moment.
+- `btkWriteAcquisition` fails to create a new folder on matlab.
+- `btkReadAcquisition` and `btkWriteAcquisition` will no longer crash when given arguments that are not str type.
+
 ## [2025.2.0] - 2025-03-11
 
 ### Added
